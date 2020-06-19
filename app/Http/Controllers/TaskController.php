@@ -13,9 +13,7 @@ class TaskController extends Controller
      */
     public function index(Request $request)
     {
-        $tasks = DB::insert('insert into tasks (name_city, latitude, longitude, number_inhabit) values (?, ?, ?, ?)', [$request->nameCity, $request->latitude, $request->longitude, $request->numberInhabit]);
-        $data = [ 'nameCity' => $request->nameCity, 'latitude' => $request->latitude, 'longitude' => $request->longitude, 'numberInhabit' => $request->numberInhabit];
-        return $data;
+
     }
 
     
@@ -27,7 +25,7 @@ class TaskController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -38,7 +36,7 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
-       
+
     }
 
     /**
